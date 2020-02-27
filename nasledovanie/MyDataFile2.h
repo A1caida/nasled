@@ -7,6 +7,7 @@ private:
 	ifstream owo; ofstream out; string a;
 public:
 	MyDataFile2();
+	MyDataFile2(string);
 	virtual int Open() override;
 	virtual string Read() override;
 	virtual void Close() override;

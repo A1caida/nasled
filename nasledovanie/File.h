@@ -2,11 +2,13 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 class File
 {
+	
 public:
 	
 	virtual int Open() = 0;

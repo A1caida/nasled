@@ -5,9 +5,13 @@ MyDataFile2::MyDataFile2()
 {
 	
 }
+MyDataFile2::MyDataFile2(string i)
+{
+	a = i;
+}
 int MyDataFile2::Open()
 {
-	owo.open("C:\\Users\\A1caida\\Downloads\\uwu.txt");
+	owo.open("C:\\Users\\AhmedhanovRN\\Downloads\\uwu.txt");
 	if (!owo.is_open())
 	{
 		cout << "Не удалось открыть файл." << endl;
@@ -39,7 +43,7 @@ int MyDataFile2::Write()
 		cout << "Сначала закройте файл." << endl;
 		return  1;
 	}
-	out.open("C:\\Users\\A1caida\\Downloads\\owo.txt");
+	out.open("C:\\Users\\AhmedhanovRN\\Downloads\\uwu.txt");
 	if (out.is_open())
 	{
 		out << "Hello World!" << endl;

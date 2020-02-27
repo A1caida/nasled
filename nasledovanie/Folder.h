@@ -4,6 +4,6 @@ class Folder :
 	public MyDataFile2
 {
 public:
-	/*Folder(my)*/
+	void Foldeer();
 };
 

@@ -4,8 +4,9 @@
 class MyDataFile1 :	public File
 {
 private:
-	ifstream owo; ofstream out; string a;
+	ifstream owo; ofstream out; //string a;
 public:
+	string a1;
 	MyDataFile1();
 	MyDataFile1(string);
 	virtual int Open() override;

@@ -23,8 +23,8 @@ int check(int e)
 int main()
 {
 	setlocale(LC_ALL, "Russian");		
-	string k = "010";
-	MyDataFile1 n(k); MyDataFile2 l;
+	//string k = "";
+	MyDataFile1 n(""); MyDataFile2 l("");
 	string b,j;
 	int e;
 	do
@@ -51,21 +51,159 @@ int main()
 		{
 		case 1:
 		{
-			string a;
+			int a;
 			cout << "С каким файлом работаем?" << endl; 
 			cin >> a;
-			n.Open();
-			n.Read();
-			MyDataFile1 n(n.Read());
-		//	n = n.Read();
-			n.Close();
-			n.Open();
-			n.Read();
-			cout <<  k << endl;
+			if (a == 1)
+			{
+				n.Open();
+			}
+			else if (a == 2)
+			{
+				l.Open();
+
+			}
+			else
+			{
+				cout << "Введите правильное значение" << endl;
+			}
+
 		};
 		break;
+		case 2:
+		{
+			int a;
+			cout << "С каким файлом работаем?" << endl;
+			cin >> a;
+			if (a == 1)
+			{
+				n.Close();
+			}
+			else if (a == 2)
+			{
+				l.Close();
+
+			}
+			else
+			{
+				cout << "Введите правильное значение" << endl;
+			}
+
+		};
+		break;
+		case 3:
+		{
+			int a;
+			cout << "С каким файлом работаем?" << endl;
+			cin >> a;
+			if (a == 1)
+			{
+				string uwu;
+				cout << "Напишите слово или букву" << endl;
+				cin >> uwu;
+				n.Seek(uwu);
+			}
+			else if (a == 2)
+			{
+				string uwu;
+				cout << "Напишите слово или букву" << endl;
+				cin >> uwu;
+				l.Seek(uwu);
+			}
+			else
+			{
+				cout << "Введите правильное значение" << endl;
+			}
+
+		}; break;
+		case 4:
+		{
+			int a;
+			cout << "С каким файлом работаем?" << endl;
+			cin >> a;
+			if (a == 1)
+			{
+				n.Read();
+			}
+			else if (a == 2)
+			{
+				l.Read();
+
+			}
+			else
+			{
+				cout << "Введите правильное значение" << endl;
+			}
+
+		};
+		break;
+		case 5:
+		{
+
+			int a;
+			cout << "С каким файлом работаем?" << endl;
+			cin >> a;
+			if (a == 1)
+			{
+				n.Write();
+			}
+			else if (a == 2)
+			{
+				l.Write();
+
+			}
+			else
+			{
+				cout << "Введите правильное значение" << endl;
+			}
+
+		}break;
+		case 6:
+		{
+			int a;
+			cout << "С каким файлом работаем?" << endl;
+			cin >> a;
+			if (a == 1)
+			{
+				string uwu;
+				cout << "Напишите слово или букву" << endl;
+				cin >> uwu;
+				n.GetPosition(uwu);
+			}
+			else if (a == 2)
+			{
+				string uwu;
+				cout << "Напишите слово или букву" << endl;
+				cin >> uwu;
+				l.GetPosition(uwu);
+			}
+			else
+			{
+				cout << "Введите правильное значение" << endl;
+			}
 
 
+		}; break;
+		case 7:
+		{
+			int a;
+			cout << "С каким файлом работаем?" << endl;
+			cin >> a;
+			if (a == 1)
+			{
+				n.GetLength();
+			}
+			else if (a == 2)
+			{
+				l.GetLength();
+
+			}
+			else
+			{
+				cout << "Введите правильное значение" << endl;
+			}
+
+		}
 		}
 
 
