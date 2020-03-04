@@ -1,10 +1,12 @@
 #pragma once
 #include "File.h"
+#include <string>
 
 class MyDataFile1 :	public File
 {
 private:
 	ifstream owo; ofstream out; //string a;
+	
 public:
 	string a1;
 	MyDataFile1();

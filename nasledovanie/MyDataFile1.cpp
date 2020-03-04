@@ -6,10 +6,11 @@ MyDataFile1::MyDataFile1()
 MyDataFile1::MyDataFile1(string i)
 {
 	a1 = i;
+	
 }
 int MyDataFile1::Open()
 {
-	owo.open("C:\\Users\\AhmedhanovRN\\Downloads\\owo.txt");
+	owo.open("C:\\Users\\A1caida\\Downloads\\owo.txt");
 	if (!owo.is_open())
 	{
 		cout<< "Не удалось открыть файл." << endl;
@@ -24,8 +25,8 @@ int MyDataFile1::Open()
 string MyDataFile1::Read()
 {
 	
-	if (!owo.is_open()) { a1 = "1";};
-	cout << a1 << endl;
+	if (!owo.is_open()) { cout << "Не удалось открыть файл."<<endl;};
+
 	getline(owo, a1);
 
 	cout << a1 << endl;
@@ -41,20 +42,21 @@ int MyDataFile1::Write()
 		cout << "Сначала закройте файл." << endl;
 		return  1;
 	}
-	out.open("C:\\Users\\AhmedhanovRN\\Downloads\\owo.txt");
+	out.open("C:\\Users\\A1caida\\Downloads\\owo.txt");
 	string uwu;
-	cout<<"chlen"<<endl;
+	cout<<"Введите текст"<<endl;
 	cin >> a1;
 	if (out.is_open())
 	{
 		out << a1 << endl;
 	}
+	out.close();
 	return 0;
 }
 
 int MyDataFile1::Seek(string b)
 {
-	//if (a == "") return 1;
+	if (!owo.is_open()) { cout << "Не удалось открыть файл." << endl; };
 	int pos = a1.find(b);
 	
 	if (pos == -1)
@@ -68,6 +70,7 @@ int MyDataFile1::Seek(string b)
 
 int MyDataFile1::GetPosition(string b)
 {
+	if (!owo.is_open()) { cout << "Не удалось открыть файл." << endl; };
 	int pos = a1.find(b);
 
 	if (pos == -1)
@@ -81,6 +84,7 @@ int MyDataFile1::GetPosition(string b)
 
 int MyDataFile1::GetLength()
 {
+	if (!owo.is_open()) { cout << "Не удалось открыть файл." << endl; };
 	cout << a1.length() << endl;
 	return 0;
 }

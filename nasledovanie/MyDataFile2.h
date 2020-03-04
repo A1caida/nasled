@@ -1,7 +1,7 @@
 #pragma once
-#include "MyDataFile1.h"
+#include "File.h"
 class MyDataFile2 :
-	public MyDataFile1
+	public File
 {
 private:
 	ifstream owo; ofstream out; string a;

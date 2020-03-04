@@ -2,6 +2,7 @@
 #include "File.h"
 #include "MyDataFile1.h"
 #include "MyDataFile2.h"
+#include "Folder.h"
 
 using namespace std;
 
@@ -23,9 +24,9 @@ int check(int e)
 int main()
 {
 	setlocale(LC_ALL, "Russian");		
-	//string k = "";
 	MyDataFile1 n(""); MyDataFile2 l("");
 	string b,j;
+	Folder f;
 	int e;
 	do
 	{
@@ -99,6 +100,7 @@ int main()
 			if (a == 1)
 			{
 				string uwu;
+				 
 				cout << "Напишите слово или букву" << endl;
 				cin >> uwu;
 				n.Seek(uwu);
@@ -123,11 +125,11 @@ int main()
 			cin >> a;
 			if (a == 1)
 			{
-				n.Read();
+				b=n.Read();
 			}
 			else if (a == 2)
 			{
-				l.Read();
+				j=l.Read();
 
 			}
 			else
@@ -203,37 +205,31 @@ int main()
 				cout << "Введите правильное значение" << endl;
 			}
 
-		}
+		}; break;
+		case 8:
+		{
+			int a;
+			cout << "С каким файлом работаем?" << endl;
+			cin >> a;
+			if (a == 1)
+			{
+				f.owo(b);
+				f.out();
+			}
+			else if (a == 2)
+			{
+				f.lol(j);
+
+			}
+			else
+			{
+				cout << "Введите правильное значение" << endl;
+			}
+
+		}; break;
 		}
 
 
 	} while (e!=9);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	l.Open();
-	n.Read();
-	n.Close();
-	cin >> b;
-	n.Seek(b);
-	n.GetLength();
 }
 
