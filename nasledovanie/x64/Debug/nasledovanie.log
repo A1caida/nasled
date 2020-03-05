@@ -1,4 +1,10 @@
-﻿  MyDataFile2.cpp
-C:\Users\A1caida\source\repos\nasled\nasledovanie\MyDataFile2.cpp(62,21): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\A1caida\source\repos\nasled\nasledovanie\MyDataFile2.cpp(76,21): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  nasledovanie.vcxproj -> C:\Users\A1caida\source\repos\nasled\x64\Debug\nasledovanie.exe
+﻿  Folder.cpp
+  MyDataFile1.cpp
+C:\Users\AhmedhanovRN\Desktop\nasled-master\nasledovanie\MyDataFile1.cpp(60): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\AhmedhanovRN\Desktop\nasled-master\nasledovanie\MyDataFile1.cpp(74): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  MyDataFile2.cpp
+C:\Users\AhmedhanovRN\Desktop\nasled-master\nasledovanie\MyDataFile2.cpp(62): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\AhmedhanovRN\Desktop\nasled-master\nasledovanie\MyDataFile2.cpp(76): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  nasledovanie.cpp
+  Создание кода...
+  nasledovanie.vcxproj -> C:\Users\AhmedhanovRN\Desktop\nasled-master\x64\Debug\nasledovanie.exe

@@ -219,7 +219,7 @@ int main()
 			else if (a == 2)
 			{
 				f.lol(j);
-
+				f.out();
 			}
 			else
 			{

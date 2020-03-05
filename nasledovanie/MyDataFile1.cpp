@@ -10,7 +10,7 @@ MyDataFile1::MyDataFile1(string i)
 }
 int MyDataFile1::Open()
 {
-	owo.open("C:\\Users\\A1caida\\Downloads\\owo.txt");
+	owo.open("C:\\Users\\AhmedhanovRN\\Downloads\\owo.txt");
 	if (!owo.is_open())
 	{
 		cout<< "Не удалось открыть файл." << endl;
@@ -42,7 +42,7 @@ int MyDataFile1::Write()
 		cout << "Сначала закройте файл." << endl;
 		return  1;
 	}
-	out.open("C:\\Users\\A1caida\\Downloads\\owo.txt");
+	out.open("C:\\Users\\AhmedhanovRN\\Downloads\\owo.txt");
 	string uwu;
 	cout<<"Введите текст"<<endl;
 	cin >> a1;

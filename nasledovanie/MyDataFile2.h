@@ -8,13 +8,13 @@ private:
 public:
 	MyDataFile2();
 	MyDataFile2(string);
-	virtual int Open() override;
-	virtual string Read() override;
-	virtual void Close() override;
-	virtual int Write() override;
-	virtual int Seek(string) override;
-	virtual int GetPosition(string) override;
-	virtual int GetLength() override;
+	int Open() override;
+	string Read() override;
+	void Close() override;
+	int Write() override;
+	int Seek(string) override;
+	int GetPosition(string) override;
+	int GetLength() override;
 	~MyDataFile2();
 
 };

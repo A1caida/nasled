@@ -15,24 +15,30 @@ int Folder::owo(string n)
 
 int Folder::lol(string l)
 {
-	v1[mag1] = l;
+	v2[mag1] = l;
 	mag1++;
 	return 0;
 }
 
 int Folder::out()
 {
-	cout << "MyDataFile1" << endl;
-	for (size_t i = 0; i < mag; i++)
+	if (mag > 0)
 	{
-		cout << i <<".";
-		cout << v1[i] << endl;
+		cout << "MyDataFile1" << endl;
+		for (size_t i = 0; i < mag; i++)
+		{
+			cout << i + 1 << ".";
+			cout << v1[i] << endl;
+		}
 	}
-	cout << "MyDataFile2" << endl;
-	for (size_t i = 0; i < mag1; i++)
+	if (mag1 > 0)
 	{
-		cout << i << ".";
-		cout << v1[i] << endl;
+		cout << "MyDataFile2" << endl;
+		for (size_t i = 0; i < mag1; i++)
+		{
+			cout << i + 1 << ".";
+			cout << v2[i] << endl;
+		}
 	}
 	return 0;
 }

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Folder">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEAAAAAAIAAAAAAACAAAAAQQAQAAAAIAAAAABAA=</HashCode>
+      <FileName>Folder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyDataFile1">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAIAAQDAAAAAAgAAAQAAAAQAAAAQGAAAA=</HashCode>
+      <FileName>MyDataFile1.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyDataFile2">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAIAAQDAAAAAAggAAQAAAgAAAAAAGAAAA=</HashCode>
+      <FileName>MyDataFile2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="File">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAIAAADAAAAAAgAAAAAAAAAAAAAAGAAAA=</HashCode>
+      <FileName>File.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
